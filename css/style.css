@@ -1,3 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ccc;
+}
+.container{
+
+    width: 80%;
+    margin: 100px auto;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.137);
+    border-radius: 20px;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: gold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px black;
+    margin: 20px 0;
+}
+#contenitore_addTask{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #ccc;
+}
+#new{
+    border-style: none;
+    width: 300px;
+}
+#add{
+    padding: 10px 20px;
+    cursor: pointer;
+    border-style: none;
+    border: 1px solid black;
+    background-color: #732727;
+    margin-left: 50px;
+    color: gold;
+    font-weight: bold;
+    border-radius: 10px;
+}
 .done{
     text-decoration: line-through;
 }
@@ -7,7 +52,9 @@
 ul li {
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 20px 50px;
+    font-size: 20px;
+    font-weight: bold;
 }
 .delete{
     display: inline-block;

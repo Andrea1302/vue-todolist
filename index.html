@@ -15,9 +15,12 @@
     <!-- container e istanza vue su JS  -->
     <div id="app" class="container">
 
-        <label for="">Inserisci le cose da Fare </label>
-        <input type="text" name="" id="" v-model="newTask.text">
-        <button id="add" @click="addTask"></button>
+        <h1>To do List</h1>
+        <div id="contenitore_addTask">
+            <input type="text" name="" id="new" v-model="newTask.text" placeholder="Inserisci qui le cose da fare !">
+            <button id="add" @click="addTask"> Aggiungi </button>
+        </div>
+        
         <ul id="todo_ul">
             <li v-for="task,i in tasks" :key="i">
                <span :class="task.done === 'true' ? 'done' : ''"  > {{task.text}}</span> <span class="delete" @click="remove(i)">&#10060;</span>
