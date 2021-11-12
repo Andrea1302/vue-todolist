@@ -17,7 +17,7 @@
 
         <h1>To do List</h1>
         <div id="contenitore_addTask">
-            <input type="text" name="" id="new" v-model="newTask.text" placeholder="Inserisci qui le cose da fare !">
+            <input type="text" name="" id="new" @keyup.enter="addTask" v-model="newTask.text" placeholder="Inserisci qui le cose da fare !">
             <button id="add" @click="addTask"> Aggiungi </button>
         </div>
         
