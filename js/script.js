@@ -20,6 +20,10 @@ gli unici true saranno alcuni nei dati di partenza. */
 var toDoList = new Vue ({
     el: "#app",
     data: {
+        newTask:{
+            text:"",
+            done: "false"
+        },
         tasks:[
             {
                 text: "Fare il bucato",
@@ -47,6 +51,18 @@ var toDoList = new Vue ({
             }
     
         ]  
+    },
+    methods: {
+        remove(iterazione){
+            this.tasks.splice(iterazione,1);
+        },
+        addTask(){
+            this.tasks.push(this.newTask);
+            this.newTask = {
+                text:"",
+                done: "false"
+            }
+        }
     }
     
     
