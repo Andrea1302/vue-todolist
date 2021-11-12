@@ -62,6 +62,14 @@ var toDoList = new Vue ({
                 text:"",
                 done: "false"
             }
+        },
+        fatto(iterazione){
+            if ( this.tasks[iterazione].done === "false" ){
+                this.tasks[iterazione].done = "true";
+            } else {
+                this.tasks[iterazione].done = "false";
+            }
+            
         }
     }
     

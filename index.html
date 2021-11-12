@@ -23,7 +23,14 @@
         
         <ul id="todo_ul">
             <li v-for="task,i in tasks" :key="i">
-               <span :class="task.done === 'true' ? 'done' : ''"  > {{task.text}}</span> <span class="delete" @click="remove(i)">&#10060;</span>
+                <div id="checkList">
+                    <div>
+                        <span id="fatto" @click="fatto(i)"> &#10003;</span>
+                    </div>
+                     
+                    <span id="lista_text" :class="task.done === 'true' ? 'done' : ''"  > {{task.text}}</span> 
+                </div>
+                <span class="delete" @click="remove(i)">&#10060;</span> 
             </li>
         </ul>
 

@@ -44,11 +44,22 @@ h1{
     font-weight: bold;
     border-radius: 10px;
 }
+#lista_text{
+    margin-left: 20px;
+}
+#checkList{
+    display: flex;
+}
+#fatto{
+    /* margin-right: 20px; */
+    color: green;
+    cursor: pointer;
+}
 .done{
     text-decoration: line-through;
 }
 #todo_ul{
-    width: 400px;
+    width: 520px;
 }
 ul li {
     display: flex;
@@ -61,4 +72,5 @@ ul li {
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
+    margin-left: 30px;
 }
