@@ -11,7 +11,22 @@
 </head>
 <body>
    
-    
+
+    <!-- container e istanza vue su JS  -->
+    <div id="app" class="container">
+
+        <ul id="todo_ul">
+            <li v-for="task,i in tasks" :key="i">
+               <span :class="task.done === 'true' ? 'done' : ''"  > {{task.text}}</span> <span class="delete">&#10060;</span>
+            </li>
+        </ul>
+
+
+
+
+
+
+    </div>
 
 
 

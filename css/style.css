@@ -1,0 +1,16 @@
+.done{
+    text-decoration: line-through;
+}
+#todo_ul{
+    width: 400px;
+}
+ul li {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.delete{
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}

@@ -16,3 +16,38 @@ gli unici true saranno alcuni nei dati di partenza. */
 // 3 collegare sull html il nostro text all interno del nostro array di oggetti a un Ul li 
 // 3.1 se done = true , il testo sarà sbarrato ----> aggiungo classe con text-decoration line-through;
 // 4 aggiungo al mio text nell html una entity code o un pulsante con "x" dove associerò al click un evento ( togliere quell oggetto dal nostro array di oggetti)
+
+var toDoList = new Vue ({
+    el: "#app",
+    data: {
+        tasks:[
+            {
+                text: "Fare il bucato",
+                done: "false"
+            },
+            {
+                text: "spolverare i mobili",
+                done: "false"
+            },
+            {
+                text: "portare via la spazzatura",
+                done: "true"
+            }
+            ,{
+                text: "Lavare i piatti",
+                done: "false"
+            }
+            ,{
+                text: "Lavare il pavimento",
+                done: "true"
+            },
+            {
+                text: "Dare da mangiare al cane",
+                done: "false"
+            }
+    
+        ]  
+    }
+    
+    
+})
